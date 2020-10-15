@@ -1,0 +1,25 @@
+{% extends 'firstapp/index.html' %}
+
+{% block content %}
+  <h2>{{ search | title }}</h2>
+
+  <div class="row">
+    {% for result in final_results %}
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ result.3 }}">
+            <span class="card-title">{{ result.2 }}</span>
+          </div>
+          <div class="card-content">
+            <p>{{ result.0 }}</p>
+          </div>
+          <div class="card-action">
+            <a href="{{ result.1 }}">Click for details</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock content %}

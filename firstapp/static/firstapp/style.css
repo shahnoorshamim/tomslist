@@ -1,0 +1,17 @@
+.card {
+  height: 400px;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-title {
+  color: black;
+}
+
+h2 {
+  text-align: center;
+}
